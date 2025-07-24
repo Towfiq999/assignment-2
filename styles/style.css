@@ -1,0 +1,78 @@
+/* nav */
+
+.task-bar{
+    display: flex;
+    
+}
+.task-bar ul li a {
+    
+    text-decoration: none;
+}
+.task-bar ul li{
+list-style: none;
+}
+.full-taskbar{
+    display: flex;
+   justify-content: space-between;
+    width: 1140px;
+    margin: 0 auto;
+ align-items: center;
+ padding-top: 15px;
+ /* margin-left: 180px; */
+}
+.home{
+color: black;
+}
+.cart{
+color: #252432;
+}
+.shop {
+    color:#8987A1;
+}
+.about-us{
+      color: #8987A1;
+}
+.color{
+    color: #E95A08;
+}
+.nav-subtitle{
+    color:#78768b;
+}
+.nav-image{
+    width: 100%;
+}
+.nav-2{
+    display: flex;
+    width: 1140px;
+    margin: 0 auto;
+    /* margin-left: 180px;
+    margin-right: 180px;
+     */
+     margin-top: 150px;
+}
+.always{
+    font-size: xx-large;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* mobile devise */
+@media screen and (max-width:576px){
+    .home, .shop, ,.about-us{
+        display: none;
+    }
+    .nav-2{
+       flex-direction: column-reverse;
+       width: 100%;
+       padding: 5px;
+    }
+}
