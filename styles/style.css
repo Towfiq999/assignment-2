@@ -1,4 +1,23 @@
+
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+.open-sans-font {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+
+
+
 /* nav */
+
+
 
 .task-bar{
     display: flex;
@@ -8,13 +27,17 @@
     
     text-decoration: none;
 }
+.task-bar ul li a:hover{
+background-color: rgb(230, 228, 225);
+}
+
 .task-bar ul li{
 list-style: none;
 }
 .full-taskbar{
     display: flex;
    justify-content: space-between;
-    width: 1140px;
+    width: 85%;
     margin: 0 auto;
  align-items: center;
  padding-top: 15px;
@@ -35,30 +58,109 @@ color: #252432;
 .color{
     color: #E95A08;
 }
+.always{
+    margin-top: 60px;
+   
+}
 .nav-subtitle{
     color:#78768b;
+    /* margin-top: 30px; */
 }
 .nav-image{
     width: 100%;
 }
 .nav-2{
     display: flex;
-    width: 1140px;
+    width: 85%;
     margin: 0 auto;
+    
     /* margin-left: 180px;
     margin-right: 180px;
      */
      margin-top: 150px;
+     margin-bottom: 100px;
 }
+
 .always{
-    font-size: xx-large;
+    font-size:xx-large;
+    width: 85%;
 }
 
+.our-plants{
+    margin-top: 100px;
+    text-align: center;
+    font-size:larger;
+    /* max-width: 1140px; */
+    width: 85%;
+    margin: 0 auto;
+    /* background-color: #E95A08; */
+   
+}
+.fresh-flowers{
+    font-size:larger;
+}
+.add-to-cart{
+ background-color: #E95A08;
+border: none;
+padding: 20px;
+font-size: small;
+color: white;
+width:270px;
+margin-bottom: 40px;
 
+}
+.add-to-cart:hover{
+    background-color: rgb(225, 206, 58);
+    font-size: large;
+}
+.lily{
+    color: #4d4c50;
+    text-align: center;
+    font-weight: 650;
+}
+.cost{
+   text-align: center;
+   font-size: xx-large;
+}
+.all-flowers{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 35px;
+    margin-bottom: 100px;
+}
+/* .flower-item{
+   width: 85%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+} */
 
-
-
-
+.badge{
+    width: 35%;
+   margin-left: -120px;
+   
+}
+.badge{
+    margin-bottom: 420px;
+}
+.flower-lover{
+  width: 80%;
+}
+.page3{
+    margin-top: 100px;
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+}
+.page3-text{
+    margin-top: 150px;
+    color: #78768b;
+    font-size: large;
+}
+.page3-title{
+    color: #252432;
+    font-size:50px;
+}
 
 
 
@@ -67,12 +169,84 @@ color: #252432;
 
 /* mobile devise */
 @media screen and (max-width:576px){
-    .home, .shop, ,.about-us{
-        display: none;
+   
+.task-bar{
+    .home,.shop,.about-us{
+display: none;
     }
+    .cart{
+        margin-left: 150px;
+    }
+
+}
+.cart{
+    display: flex;
+    font-size: 25px;
+}
+.nav-image{
+    width: 100%;
+   display: flex;
+
+}
+.nav-subtitle{
+    font-size: 25px;
+    
+}
+
+.our-plants-text{
+   margin: 0 auto;
+  
+}
+ 
     .nav-2{
        flex-direction: column-reverse;
        width: 100%;
        padding: 5px;
     }
+ .all-flowers{
+        grid-template-columns:repeat(2,1fr) ;
+     
+       margin: 0 2px;
+       margin-right: 2px;
+       gap: 20px;
+    }
+    .our-plants{
+        width: 50%;
+        margin-left: 10;
+        margin: 0;
+    }
+    .add-to-cart{
+ background-color: #E95A08;
+border: none;
+padding: 2px;
+font-size: 20px;
+color: white;
+width:270px;
+height: 50px;
+margin-bottom: 30px;
+
 }
+.all-flowers{
+width: 50%;
+}
+
+.badge{
+    display: none;
+}
+.flower-lover{
+  
+    display: flex;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
